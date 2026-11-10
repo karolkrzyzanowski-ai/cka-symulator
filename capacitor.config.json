@@ -1,0 +1,11 @@
+{
+  "appId": "pl.cka.symulator",
+  "appName": "CKA Symulator",
+  "webDir": "www",
+  "android": {
+    "backgroundColor": "#0F2230",
+    "allowMixedContent": false,
+    "captureInput": false,
+    "webContentsDebuggingEnabled": true
+  }
+}

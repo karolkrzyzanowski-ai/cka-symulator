@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="theme-color" content="#0A1924">
+  <meta name="color-scheme" content="dark">
+  <title>CKA Symulator</title>
+  <link rel="preload" href="fonts/jetbrains-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <button type="button" class="tb-task" id="taskChip">Wybierz zadanie</button>
+      <div class="tb-timer" id="timer" role="timer" hidden></div>
+      <button type="button" class="tb-menu" id="menuBtn">Menu</button>
+    </header>
+    <main id="term"></main>
+    <section class="sheet" id="sheet" aria-label="Treść zadania" hidden></section>
+    <nav class="keyrow" id="keys" aria-label="Klawisze pomocnicze"></nav>
+  </div>
+  <div id="editor"></div>
+  <div class="panel" id="panel" hidden></div>
+  <div class="modal" id="modal" hidden></div>
+  <div class="busy" id="busy" role="status" hidden><div class="busy-box"><div class="busy-msg"></div><div class="busy-bar"><i></i></div></div></div>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

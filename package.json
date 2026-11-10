@@ -1,0 +1,25 @@
+{
+  "name": "cka-symulator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Symulator Kubernetes do nauki CKA na Androida",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test/run-all.mjs",
+    "cap:sync": "npx cap sync android"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.6.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "js-yaml": "^5.5.0"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/cli": "^8.6.0",
+    "esbuild": "^0.28.2"
+  }
+}
